@@ -3,4 +3,52 @@
 @import 'reset';
 @import 'global';
 
+.header {
+	background-image: url(../images/shine.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 240px;
+
+	&__contact {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 15px;
+		line-height: 21px;
+		margin-bottom: 45px;
+	}
+	&__logo {
+		max-width: 440px;
+		margin: 0 auto;
+	}
+}
+
+.menu {
+	margin-bottom: 75px;
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
+
+	&__link {
+		font-size: 18px;
+		line-height: 25px;
+
+		&:hover {
+			background: #fff;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
+
+
 @import 'media';
